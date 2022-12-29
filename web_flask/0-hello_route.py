@@ -1,14 +1,12 @@
-#!/usr/bin/python3
-"""script starts a Flask web application"""
-
+#!/usr/bin/env python3
+"""A script that starts a Flask web_app"""
 from flask import Flask
+
 app = Flask(__name__)
-
-
 @app.route('/', strict_slashes=False)
-def hello_holberton():
-    """Returns a string at the root route"""
-    return 'Hello HBNB!'
+def first_page():
+    """displays a string on '/'"""
+    return "Hello HBNB!"
 
-if __name__ == '__main__':
-    app.run(host='0.0.0.0')
+if __name__ == "__main__":
+    app.run(host="0.0.0.0")
