@@ -3,6 +3,8 @@
 from flask import Flask
 
 app = Flask(__name__)
+
+
 @app.route('/', strict_slashes=False)
 def first_page():
     """displays a string on '/'"""
